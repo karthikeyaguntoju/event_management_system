@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Dream Creations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        
+        @keyframes slideFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #FFEBCD;
+    margin: 0;
+    padding: 0;
+  }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer; 
+        transition: transform 0.3s ease; 
+        color: brown;
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+            animation: slideFromRight 1s ease-in-out; 
+      }
+      .container:hover {
+        transform: scale(1.05); 
+        background-color: brown;
+        color: #FFEBCD;
+      } 
+    
+      h1 {
+        color: brown;
+        text-align: center;
+      }
+      .features {
+        margin-top: 30px;
+      }
+      .feature-item {
+        margin-bottom: 20px;
+      }
+      .h2 {
+        color: brown;
+        font-weight: 100px;
+      }
+    
+      
+      .container img {
+        width: 100px;
+        margin-left: 10px; 
+        border-radius: 30px;
+      }
+      .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+    </style></head>
+<body>
+    <div id="sectionHome">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
+            <a class="navbar-brand" href="#">
+                <img src="EventElevate.png" style="height:60px;"/>
+                <h>EventElevate</h>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                  
+                </div>
+            </div>
+        </nav>
+    </div><hr><hr><hr><hr><hr>
+        <h1>CONTACT</h1>
+        <div class="container" onclick="location.href='https://www.facebook.com/';">
+            <div class="features">
+                <div class="feature-item">
+                    <h2 class="feature-title">FACEBOOK</h2>
+                  </div>
+            </div>
+            <img src="facebook.webp" alt="Icon">
+          </div>
+
+          <div class="container" onclick="location.href='https://www.instagram.com/?hl=en';">
+            <div class="features">
+                <div class="feature-item">
+                    <h2 class="feature-title">INSTAGRAM</h2>
+                  </div>
+            </div>
+            <img src="instagram.webp" alt="Icon">
+          </div>
+
+          <div class="container" onclick="location.href='https://twitter.com/login';">
+            <div class="features">
+                <div class="feature-item">
+                    <h2 class="feature-title">TWITTER</h2>
+                  </div>
+            </div>
+            <img src="twitter.webp" alt="Icon">
+          </div>
+
+          <div class="container" onclick="location.href='https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1';">
+            <div class="features">
+                <div class="feature-item">
+                    <h2 class="feature-title">EMAIL</h2>
+                  </div>
+            </div>
+            <img src="google.webp" alt="Icon" style="height:70px; width: 70px; padding-right: 20px;">
+          </div>
+          
+          <div class="container" onclick="location.href='';">
+            <div class="features">
+                <div class="feature-item">
+                    <h2 class="feature-title">CALL</h2>
+                    <p>+91 12345-67890</p>
+                    <p>+91 09876-5432</p>
+                  </div>
+            </div>
+            <img src="call.webp" alt="Icon">
+          </div>
+
+</body>
+</html>

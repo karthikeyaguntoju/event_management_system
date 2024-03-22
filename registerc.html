@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventElevate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+                @keyframes slideFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #FFEBCD;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer; 
+            transition: transform 0.3s ease; 
+            color: brown;
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            animation: slideFromRight 1s ease-in-out; 
+
+        }
+
+        h1 {
+            color: brown;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            width: 650px; 
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 650px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: brown;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .program{
+            display: flex;
+        }
+        .input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+    </style>
+</head>
+<body>
+<main class="whole">
+    <div class="full-height">
+
+            <div id="sectionHome">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light sticky"> 
+                    <a class="navbar-brand" href="#">
+                        <img src="EventElevate.png" style="height:60px;"/>
+                        <h>EventElevate</h>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" href="#">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                          
+                        </div>
+                    </div>
+                </nav>
+            </div><hr><hr>
+            <div class="container">
+                <form id="register-form" method="post">
+                    <div class="form-group">
+                        <h2 id="title" style="font-size: 30px;" class="text-center">Registration Form</h2>
+                        <hr>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Regestration No</label>
+                        <input type="text" class="form-control" placeholder="Enter your Regd.No" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <input type="tel" name="contact" id="contact" class="form-control" placeholder="Enter your Contact No." required />
+                    </div><hr>
+                    <div class="form-group">
+                        <p>Select Your Year</p>
+                        <select id="theme" name="theme" class="form-control">
+                            <option value="">Select one</option>
+                            <option value="year">1st year</option>
+                            <option value="year">2nd year</option>
+                            <option value="year">3rd year</option>
+                            <option value="year">4th year</option>
+                        </select>
+                    </div><hr>
+                    <div class="form-group">
+                        <p>Select Your DEPARTMENT</p>
+                        <select id="destination" name="destination" class="form-control">
+                            <option value="">Select one</option>
+                            <option value="BRANCH">Civil Engineering</option>
+                            <option value="BRANCH">Mechanical Engineering
+                            </option>
+                            <option value="BRANCH">Electrical Engineering
+                            </option>
+                            <option value="BRANCH">Chemical Engineering
+                            </option>
+                            <option value="BRANCH">Computer Engineering
+                            </option>
+                            <option value="BRANCH">Aerospace Engineering
+                            </option>
+                            <option value="BRANCH">Biomedical Engineering
+                            </option>
+                            <option value="BRANCH">Environmental Engineering
+                            </option>
+                            <option value="BRANCH">Industrial Engineering
+                            </option>
+                            <option value="BRANCH">Petroleum Engineering
+                            </option>
+                        </select>
+                    
+                    
+                        <hr>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                          Programs Intrested
+                        </p>
+              
+                        <label
+                          ><input name="prefer"
+                            value="front-end-projects"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Dance</label
+                        >
+                        <label>
+                          <input
+                            name="prefer"
+                            value="back-end-projects"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Music</label
+                        >
+                        <label
+                          ><input
+                            name="prefer"
+                            value="data-visualization"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Drawing
+                          </label
+                        >
+                        <label
+                          ><input
+                            name="prefer"
+                            value="challenges"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Drama</label
+                        >
+                        <label
+                          ><input
+                            name="prefer"
+                            value="open-source-community"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Directuon
+                          </label
+                        >
+                        <label
+                          ><input
+                            name="prefer"
+                            value="gitter-help-rooms"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Standup Comedy
+                          </label
+                        >
+                        <label
+                          ><input
+                            name="prefer"
+                            value="videos"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Hosting
+                          </label
+                        >
+                        <label
+                          ><input
+                            name="prefer"
+                            value="city-meetups"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Event Organizing</label
+                        ><hr>
+                    <div class="form-group">
+                        <p>Any Other Pograms..</p>
+                        <textarea id="comments" class="input-textarea" name="comment" placeholder="Any other..."></textarea>
+                    </div><hr>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+    </div>
+</div>
+</main>
+</body>
+</html>
